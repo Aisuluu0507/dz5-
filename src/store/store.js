@@ -1,8 +1,11 @@
-import { legacy_createStore as createStore, combineReducers } from "redux";
-import marketReducer from "./marketReducer";
+import { configureStore } from "@reduxjs/toolkit";
 
-const rootReducer = combineReducers({
-    posts: marketReducer
+import { marketReducer } from "./ReducerSlice";
+
+export const store = configureStore({
+    reducer:{
+        posts:marketReducer,
+    }
 })
 
-export  const store = createStore(rootReducer)
+

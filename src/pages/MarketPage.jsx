@@ -1,6 +1,6 @@
 import React from 'react' 
 import { useDispatch, useSelector } from 'react-redux' 
-import { marketAction } from '../store/marketAction' 
+import { marketAction } from '../store/marketSlice' 
 import '../index.css' 
  
  
